@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Language Recognition</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- navigation bar -->
+    <header>
+        <nav class="nav">
+            <a href="/" class = "Logo">Logo</a>
+            <p class="Heading">Sign Language Recognition</p>
+
+            <!-- nav items -->
+            <div class="nav_link ">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#Logout">Logout</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </div>
+
+            <!-- menu bar -->
+            
+            <div class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+                <!-- <span class="line"></span>  -->
+            </div>
+
+        </nav>
+
+
+     </header>
+
+     <!-- main webcam sdection -->
+
+
+     <section class="webcam">
+        <div class="container">
+            <video id="video" autoplay="false"></video>
+            <canvas id="canvas"></canvas>
+
+            <div id="predicted-output">
+                <p>Predicted Output: </p>
+            </div>
+        </div>
+        <div class="controls">
+            <button id="toggle-camera-btn">Turn Camera On</button>
+            <button id="capture-btn" disabled>Capture Image</button>
+        </div>
+     </section>
+
+
+      <!-- contact section -->
+    <section class="contact-section" id="contact">
+        <h2 class="text-wrapper">Report a problem</h2>
+        <div class="div">
+            
+          <!-- contact info -->
+          <div class="contact-info">
+            <div class="text-description">
+              <p class="p">
+                Facing any issues with our Sign Language Recognition System ?<br>
+                Please provide us with more details about the problem you’re facing?<br>
+                Your feedback is invaluable in helping us improve our system. <br>Thank you!” 😊
+              </p>
+            </div>
+  
+            <!-- social links -->
+            <div class="social-links">
+              <a href="#" title="github">
+                <img class="img" src="./images/github-mark.png"  alt="Github" />
+              </a>
+              <a href="#" title="email">
+                <img class="img" src="./images/icons8-email-50.png" alt="email" />
+              </a>
+            </div>
+          </div>
+
+          <!-- contact form -->
+          <div class="contact-form">
+            <div class="input-fields">
+              <input type="text" class="input-field" title="input" placeholder="write a problem descripton" />
+              <input type="email" class="input-field" title="email" placeholder="email" />
+            </div>
+            <button class="button"><span class="contact">Submit</span></button>
+          </div>
+        </div>
+      </section>
+
+       <!-- footer -->
+    <footer class="footer">
+        <hr />
+        <p>Shobhit | Chandra Prakash | Saumya | Adya</p>
+      </footer>
+
+       <!-- animations -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!-- javaScript link -->
+    <script src="script.js"></script>
+</body>
+</html>
